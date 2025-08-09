@@ -24,6 +24,8 @@ jobs:
         python-version: 3.x
     - run: pip install mkdocs==1.6.0
     - run: mkdocs build
+    - run: ls -la
+    - run: ls -la site
     - uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
